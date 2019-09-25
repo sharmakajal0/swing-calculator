@@ -5,27 +5,27 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Calculator {
-    public JTextField resultTxt; //1
-    public JButton clearButton; //2
-    public JButton signButton; //3
-    public JButton percentButton; //4
-    public JButton divideButton; //5
-    public JButton minusButton; //9
-    public JButton a0Button; //17
-    public JButton a1Button; //14
-    public JButton a2Button; //15
-    public JButton a3Button;
-    public JButton a4Button; //10
-    public JButton a5Button; //11
-    public JButton a6Button; //12
-    public JButton a7Button; // 6
-    public JButton a8Button; // 7
-    public JButton a9Button; //8
-    public JButton multiplyButton; //13
-    public JButton addButton; //16
-    public JButton decimalButton; //18
-    public JButton equalButton; //19
     public JPanel panel;
+    public JTextField resultTxt;
+    public JButton clearButton;
+    public JButton signButton;
+    public JButton percentButton;
+    public JButton divideButton;
+    public JButton minusButton;
+    public JButton a0Button;
+    public JButton a1Button;
+    public JButton a2Button;
+    public JButton a3Button;
+    public JButton a4Button;
+    public JButton a5Button;
+    public JButton a6Button;
+    public JButton a7Button;
+    public JButton a8Button;
+    public JButton a9Button;
+    public JButton multiplyButton;
+    public JButton addButton;
+    public JButton decimalButton;
+    public JButton equalButton;
 
     public Calculator() {
         signButton.addActionListener(new ActionListener() {
@@ -115,6 +115,62 @@ public class Calculator {
                 String ps = actionEvent.paramString();
                 System.out.println("param string: " +  ps);
                 resultTxt.setText(resultTxt.getText() + a9Button.getText());
+            }
+        });
+        decimalButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + decimalButton.getText());
+            }
+        });
+        addButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + addButton.getText());
+            }
+        });
+        divideButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + divideButton.getText());
+            }
+        });
+        multiplyButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + multiplyButton.getText());
+            }
+        });
+        minusButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + minusButton.getText());
+            }
+        });
+        percentButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + percentButton.getText());
+            }
+        });
+        clearButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                String ps = actionEvent.paramString();
+                System.out.println("param string: " +  ps);
+                resultTxt.setText(resultTxt.getText() + clearButton.getText());
             }
         });
     }
